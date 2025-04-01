@@ -1,0 +1,88 @@
+% Do not edit!
+% This file may get overwritten, make edits on a copy
+% nlinks=3
+Type= $\parallel \parallel $
+\begin{verbatim}
+mfilename=mar21parpar3, outfilename=dneplanar3a.org, datetime=21-Mar-2025 17:22:59
+         cog: 0
+     inertia: 0
+    numlinks: 3
+     gravity: 'all'
+
+\end{verbatim}
+% 21-Mar-2025 17:23:00
+\[M=
+\begin{bmatrix} a_{1}+a_{3}+2\,L_{1}\,a_{4}\,c_{23}+2\,L_{2}\,a_{4}\,c_3+2\,L_{1}\,L_{2}\,m_{3}\,c_2+2\,L_{1}\,L_{cog2}\,m_{2}\,c_2 & a_{3}+L_{1}\,a_{4}\,c_{23}+2\,L_{2}\,a_{4}\,c_3+L_{1}\,L_{2}\,m_{3}\,c_2+L_{1}\,L_{cog2}\,m_{2}\,c_2 & a_{4}\,\left(L_{cog3}+L_{1}\,c_{23}+L_{2}\,c_3\right)\\ a_{3}+L_{1}\,a_{4}\,c_{23}+2\,L_{2}\,a_{4}\,c_3+L_{1}\,L_{2}\,m_{3}\,c_2+L_{1}\,L_{cog2}\,m_{2}\,c_2 & a_{3}+2\,L_{2}\,a_{4}\,c_3 & a_{4}\,\left(L_{cog3}+L_{2}\,c_3\right)\\ a_{4}\,\left(L_{cog3}+L_{1}\,c_{23}+L_{2}\,c_3\right) & a_{4}\,\left(L_{cog3}+L_{2}\,c_3\right) & L_{cog3}\,a_{4} \end{bmatrix}
+\]
+% a_1 + a_3 + 2*L_1*a_4*cos(theta_2 + theta_3) + 2*L_2*a_4*cos(theta_3) + 2*L_1*L_2*m_3*cos(theta_2) + 2*L_1*Lcog2*m_2*cos(theta_2)
+% a_3 + L_1*a_4*cos(theta_2 + theta_3) + 2*L_2*a_4*cos(theta_3) + L_1*L_2*m_3*cos(theta_2) + L_1*Lcog2*m_2*cos(theta_2)
+% a_4*(Lcog3 + L_1*cos(theta_2 + theta_3) + L_2*cos(theta_3))
+% a_3 + L_1*a_4*cos(theta_2 + theta_3) + 2*L_2*a_4*cos(theta_3) + L_1*L_2*m_3*cos(theta_2) + L_1*Lcog2*m_2*cos(theta_2)
+% a_3 + 2*L_2*a_4*cos(theta_3)
+% a_4*(Lcog3 + L_2*cos(theta_3))
+% a_4*(Lcog3 + L_1*cos(theta_2 + theta_3) + L_2*cos(theta_3))
+% a_4*(Lcog3 + L_2*cos(theta_3))
+% Lcog3*a_4
+where
+% 21-Mar-2025 17:23:00
+\[a_1=
+{L_{1}}^2\,m_{2}+{L_{1}}^2\,m_{3}+{L_{cog1}}^2\,m_{1}
+\]
+% L_1^2*m_2 + L_1^2*m_3 + Lcog1^2*m_1
+% 21-Mar-2025 17:23:00
+\[a_3=
+m_{3}\,{L_{2}}^2+m_{2}\,{L_{cog2}}^2+m_{3}\,{L_{cog3}}^2
+\]
+% L_2^2*m_3 + Lcog2^2*m_2 + Lcog3^2*m_3
+% 21-Mar-2025 17:23:00
+\[a_4=
+L_{cog3}\,m_{3}
+\]
+% Lcog3*m_3
+% 21-Mar-2025 17:23:00
+\[G_x=
+\begin{bmatrix} -L_{1}\,m_{2}\,s_1-L_{1}\,m_{3}\,s_1-L_{cog1}\,m_{1}\,s_1-L_{cog3}\,m_{3}\,s_{123}-L_{2}\,m_{3}\,s_{12}-L_{cog2}\,m_{2}\,s_{12}\\ -L_{cog3}\,m_{3}\,s_{123}-L_{2}\,m_{3}\,s_{12}-L_{cog2}\,m_{2}\,s_{12}\\ -L_{cog3}\,m_{3}\,s_{123} \end{bmatrix}
+\]
+% - L_1*m_2*sin(theta_1) - L_1*m_3*sin(theta_1) - Lcog1*m_1*sin(theta_1) - Lcog3*m_3*sin(theta_1 + theta_2 + theta_3) - L_2*m_3*sin(theta_1 + theta_2) - Lcog2*m_2*sin(theta_1 + theta_2)
+% - Lcog3*m_3*sin(theta_1 + theta_2 + theta_3) - L_2*m_3*sin(theta_1 + theta_2) - Lcog2*m_2*sin(theta_1 + theta_2)
+% -Lcog3*m_3*sin(theta_1 + theta_2 + theta_3)
+% 21-Mar-2025 17:23:00
+\[G_y=
+\begin{bmatrix} L_{cog3}\,m_{3}\,c_{123}+L_{2}\,m_{3}\,c_{12}+L_{cog2}\,m_{2}\,c_{12}+L_{1}\,m_{2}\,c_1+L_{1}\,m_{3}\,c_1+L_{cog1}\,m_{1}\,c_1\\ L_{cog3}\,m_{3}\,c_{123}+L_{2}\,m_{3}\,c_{12}+L_{cog2}\,m_{2}\,c_{12}\\ L_{cog3}\,m_{3}\,c_{123} \end{bmatrix}
+\]
+% Lcog3*m_3*cos(theta_1 + theta_2 + theta_3) + L_2*m_3*cos(theta_1 + theta_2) + Lcog2*m_2*cos(theta_1 + theta_2) + L_1*m_2*cos(theta_1) + L_1*m_3*cos(theta_1) + Lcog1*m_1*cos(theta_1)
+% Lcog3*m_3*cos(theta_1 + theta_2 + theta_3) + L_2*m_3*cos(theta_1 + theta_2) + Lcog2*m_2*cos(theta_1 + theta_2)
+% Lcog3*m_3*cos(theta_1 + theta_2 + theta_3)
+% 21-Mar-2025 17:23:00
+\[G_z=
+\begin{bmatrix} 0\\ 0\\ 0 \end{bmatrix}
+\]
+% 0
+% 0
+% 0
+% 21-Mar-2025 17:23:01
+\[C=
+\begin{bmatrix} 0 & -L_{1}\,\left(L_{2}\,m_{3}\,s_2+L_{cog2}\,m_{2}\,s_2+L_{cog3}\,m_{3}\,s_{23}\right) & -L_{cog3}\,m_{3}\,\left(L_{1}\,s_{23}+L_{2}\,s_3\right)\\ L_{1}\,\left(L_{2}\,m_{3}\,s_2+L_{cog2}\,m_{2}\,s_2+L_{cog3}\,m_{3}\,s_{23}\right) & 0 & -L_{2}\,L_{cog3}\,m_{3}\,s_3\\ L_{cog3}\,m_{3}\,\left(L_{1}\,s_{23}+L_{2}\,s_3\right) & L_{2}\,L_{cog3}\,m_{3}\,s_3 & 0 \end{bmatrix}
+\]
+% 0
+% L_1*(L_2*m_3*sin(theta_2) + Lcog2*m_2*sin(theta_2) + Lcog3*m_3*sin(theta_2 + theta_3))
+% Lcog3*m_3*(L_1*sin(theta_2 + theta_3) + L_2*sin(theta_3))
+% -L_1*(L_2*m_3*sin(theta_2) + Lcog2*m_2*sin(theta_2) + Lcog3*m_3*sin(theta_2 + theta_3))
+% 0
+% L_2*Lcog3*m_3*sin(theta_3)
+% -Lcog3*m_3*(L_1*sin(theta_2 + theta_3) + L_2*sin(theta_3))
+% -L_2*Lcog3*m_3*sin(theta_3)
+% 0
+% 21-Mar-2025 17:23:01
+\[B=
+\begin{bmatrix} -2\,L_{1}\,\left(L_{2}\,m_{3}\,s_2+L_{cog2}\,m_{2}\,s_2+L_{cog3}\,m_{3}\,s_{23}\right) & -2\,L_{cog3}\,m_{3}\,\left(L_{1}\,s_{23}+L_{2}\,s_3\right) & -2\,L_{cog3}\,m_{3}\,\left(L_{1}\,s_{23}+L_{2}\,s_3\right)\\ 0 & -2\,L_{2}\,L_{cog3}\,m_{3}\,s_3 & -2\,L_{2}\,L_{cog3}\,m_{3}\,s_3\\ 2\,L_{2}\,L_{cog3}\,m_{3}\,s_3 & 0 & 0 \end{bmatrix}
+\]
+% -2*L_1*(L_2*m_3*sin(theta_2) + Lcog2*m_2*sin(theta_2) + Lcog3*m_3*sin(theta_2 + theta_3))
+% 0
+% 2*L_2*Lcog3*m_3*sin(theta_3)
+% -2*Lcog3*m_3*(L_1*sin(theta_2 + theta_3) + L_2*sin(theta_3))
+% -2*L_2*Lcog3*m_3*sin(theta_3)
+% 0
+% -2*Lcog3*m_3*(L_1*sin(theta_2 + theta_3) + L_2*sin(theta_3))
+% -2*L_2*Lcog3*m_3*sin(theta_3)
+% 0
