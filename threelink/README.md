@@ -1,4 +1,4 @@
-# Mass, Coreloas and gravitational matrices for some 3 link branched and unbranched chains
+# Mass, Coriolis and Gravitational matrices for some 3 link branched and unbranched chains
 | File namme | |
 |:---|:---|
 | threelinkdynamics.pdf | the matrices |
