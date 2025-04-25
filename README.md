@@ -23,7 +23,7 @@ $$ x^2+7x+53=\frac{11}3$$
 <!-- need to leave a clear line -->
 
 $$ 
-\vec{x}=\begin{bmatrix}1\end{bmatrix}
+\vec{x}=\begin{bmatrix}1 & 0\end{bmatrix}
 $$
 
 
@@ -33,7 +33,7 @@ assets
 ![piper_perp_par](https://github.com/user-attachments/assets/9cfeac9c-fc29-4b14-b335-bf9234722603)
 
 direct 
-![piper_perp_par](https://github.com/LinkageDynamics/open-chain/images/piper_perp_par.svg)
+![piper_perp_par](https://github.com/LinkageDynamics/open-chain/tree/main/images/piper_perp_par.svg)
 
 
 url
