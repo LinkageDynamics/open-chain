@@ -17,5 +17,10 @@ $$ x^2+7x+53=\frac{11}3$$
 | a | b |
 |:- | :-|
 | c | d |
+$$ 
+\vec{x}=\begin{bmatrix}1\end{bmatrix}
+$$
+
 
 Figure
+![piper_perp_par](https://github.com/user-attachments/assets/9cfeac9c-fc29-4b14-b335-bf9234722603)
