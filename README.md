@@ -12,11 +12,13 @@ This repository seeks to express these 18 sets of equations in a form that can b
 
 # Markdown test
 Whose mind is full of indices and surds
+
 $$ x^2+7x+53=\frac{11}3$$
 
 | a | b |
 |:- | :-|
 | c | d |
+
 $$ 
 \vec{x}=\begin{bmatrix}1\end{bmatrix}
 $$
