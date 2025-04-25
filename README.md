@@ -35,7 +35,7 @@ direct
 
 
 url
-![piper_perp_par](images/planar_par_par.svg)
+![planar](images/planar_par_par.svg)
 
 ## links
 
