@@ -19,10 +19,23 @@ $$ x^2+7x+53=\frac{11}3$$
 |:- | :-|
 | c | d |
 
+
+<!-- need to leave a clear line -->
+
 $$ 
 \vec{x}=\begin{bmatrix}1\end{bmatrix}
 $$
 
 
-Figure
+## Figure
+
+assets
 ![piper_perp_par](https://github.com/user-attachments/assets/9cfeac9c-fc29-4b14-b335-bf9234722603)
+
+direct 
+![piper_perp_par](https://github.com/LinkageDynamics/open-chain/images/piper_perp_par.svg)
+
+
+url
+![piper_perp_par](images/piper_perp_par.svg)
+
