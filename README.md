@@ -23,7 +23,11 @@ $$ x^2+7x+53=\frac{11}3$$
 <!-- need to leave a clear line -->
 
 $$ 
-\vec{x}=\begin{bmatrix}1 & 0\\0 & 1\end{bmatrix}
+\vec{x}=
+\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}
 $$
 
 
