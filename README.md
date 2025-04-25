@@ -33,7 +33,7 @@ assets
 ![piper_perp_par](https://github.com/user-attachments/assets/9cfeac9c-fc29-4b14-b335-bf9234722603)
 
 direct 
-![piper_perp_par](https://github.com/LinkageDynamics/open-chain/tree/main/images/piper_perp_par.svg)
+![piper_perp_par](https://raw.githubusercontent.com/LinkageDynamics/open-chain/refs/heads/main/images/piper_perp_par.svg)
 
 
 url
